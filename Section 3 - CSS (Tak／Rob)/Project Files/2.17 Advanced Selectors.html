@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Webpage With Style</title>
+
+         <style>
+
+             h1 {
+
+                color: red;
+             }
+
+             .green {
+                 color: green;
+
+             }
+             #blue {
+
+                font-size:
+             }
+
+             div p {
+
+                font-weight: bold;
+             }
+
+             h3 ~ p {
+
+                text-decoration: underline;
+             }
+
+             h3 + P {
+
+                font-size: 150%;
+             }
+
+             a[target] {
+
+                color: yellow;
+             }
+
+             a[href*="google.com"] {
+
+                font-size: 150%;
+             }
+
+         </style>
+
+    </head>
+    
+    <!-- 
+
+        ^= - begin with
+        $= - ends with
+        ~= - has the value between two spaces
+        |= - has the value seperated by hythens (-)
+    -->
+
+    <body>
+
+        <h1>I a a heading</h1>
+
+            <div>
+
+                <h3>I'm an h3 element</h3>
+
+                <p class="green">I am a paragraph.</p>
+
+                <p>I am inside the div.</p>
+
+                <a id="blue" target="_blank">I am a link</a>
+        
+            </div>
+
+            <div>
+
+                <h3>Hello!</h3>
+                <p>I'm another div</p>
+
+            </div>
+
+        <p>I am outside the div</p>
+
+        <a href="https://google.com">I'm another link</a>
+    </body>
+
+</html>

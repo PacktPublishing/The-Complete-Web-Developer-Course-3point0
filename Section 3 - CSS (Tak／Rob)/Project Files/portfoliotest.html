@@ -1,0 +1,477 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rob's portfolio site</title>
+
+    <link href="normalize.css" rel="stylesheet">
+
+    <!-- Step 6 Part 2-->
+    <!--This one goes first <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Work+Sans&display=swap" rel="stylesheet">
+    
+    <!-- Step 12 part 2-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+    /* Step 6 */
+    body {
+
+        background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+        font-family: 'Work Sans', sans-serif;
+      
+    }    
+
+    a {
+        text-decoration: none;
+    }
+   
+    /* Step 6 part 2 also */
+    h1, h2, h3 {
+            font-family: 'Days One', sans-serif;
+        }
+    
+    /* Step 2 */
+    nav {
+            display:flex;
+            background-color: #200e3d;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+            list-style: none;
+        }
+
+        nav ul li a {
+            font-size: 16px;
+            padding: 0 15px;
+            color:white;
+            transition: 0.2s;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            transition: 0.2s;
+            color:#52c5ff;
+        }
+        /* End Step 2*/
+
+        /* Step 3 */
+        .container {
+            position: relative;
+            width: 100%;
+            max-width:1200px;
+            margin:0 auto;
+            padding:0 15px;
+        }
+
+        .hero {
+            padding-top: 130px;
+        }
+
+        .hero img {
+            border-style: none;
+            border-radius: 50%;
+            margin: 0 auto;
+            max-width: 440px;
+            display: block;
+        }
+
+        h1 {
+            /* Make black first color: because of the background colour; */
+            color: white;
+            text-align:center;
+            font-size: 24px;
+            margin: 30px 0px 100px;
+        }
+        /* End of Step 3 */
+
+        /* Step 5 */
+
+        .aboutme {
+            width: 90%;
+            max-width:1100px;
+            height: auto;
+            background-color: white;
+            text-align: center;
+            padding: 40px 50px 70px;
+            margin: 0 auto;
+            box-shadow: 10px 10px 0px rgb(0 0 0 / 40%), -10px -10px 0px rgb(255 114 114 / 80%);
+        }
+
+        .aboutme h2 {
+            
+        }
+
+        .aboutme-section {
+
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: wrap;
+
+        }
+
+        .aboutme-image {
+            height: 450px;
+            width: 400px;
+            background-image: url("images/rob-aboutme.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .aboutme-text {
+            height: auto;
+            width: 40%;
+            margin-left: 40px;
+            text-align: left;
+        }
+        /* End if Step 5 */ 
+
+        /* Step 8 */
+
+        #projects {
+            padding: 5px;
+            margin: 5%;
+            width: 90%;
+            height: auto;
+            text-align: center;
+
+        }
+
+        .projects {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: wrap;
+        }
+
+        #projects h2 {
+            color:white;
+        }
+
+
+
+        .earth-project {
+            width: 400px;
+            height: 400px;
+            background: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url("images/earth.jpg");
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .text {
+            position: absolute;
+            height: 65px;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            z-index: 2;
+            background-color: white;
+            overflow: hidden;
+            transition:0.2s;
+            padding: 20px;
+        }
+
+        .text:hover {
+            height: 175px;
+            
+            transition:0.3s;
+        }
+
+        .text h3 {
+            margin-top: 3px;
+        }
+
+       
+
+        .content {
+            /*padding: 5px 0; */
+            color: black;
+        }
+
+        .button {
+            border: 5px solid lightblue;
+            border-radius: 10px;
+            width: 160px;
+            margin-bottom: 100px;
+            margin-left: 10px;
+        }
+
+        /* End step 8 */
+        /* Step 9 Part II */
+        .bbc-project {  
+            width: 400px;
+            height: 400px;
+            background: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url(images/bbcnews.png);
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+        } 
+
+        /* Step 11 */
+        .contact {
+            width: 100%;
+            height: auto;
+            padding: 75px 0 50px 0;
+            text-align: center;
+            background-color: rgba(3,3,3,45%);
+        }
+
+        .contact p {
+            margin-bottom:50px;
+        }
+
+        .contact h2, .contact p {
+            color:white;
+        }
+
+        .contact-form {
+            max-width: 800px;
+            display: flex;
+            text-align: left;
+            max-width: 1100px;
+            margin: 0 auto;
+            color: white;
+        }
+
+        .contact-form label {
+            display:block;
+            margin-bottom:9px;
+        }
+
+        .message {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+
+        }
+
+        .message textarea {
+            border-radius: 5px;
+            border:0px;
+        }
+
+        .contact-details {
+            flex: 1;
+
+            margin-right: 50px;
+        }
+
+        .contact-details input {
+            width: 100%;
+            border-radius: 5px;
+            border: 0px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+        }
+
+        .message button {
+            color: #1d3d5f;
+            border: 0;
+            border-radius: 5px;
+            background: lightblue;
+            width: 140px;
+            height: 40px;
+            margin-top: 40px;
+            margin-left: auto;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor:pointer;
+            transition: 0.3s;
+        }
+
+        .message button:hover {
+            background: black;
+            color: white;
+            transition: 0.2s;
+        }
+        /* End step 11 */
+
+        /* Step 12 part 3 */
+
+        footer {
+            height: 90px;
+            background-color:#1f2027;
+        }
+
+        footer .container {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        .social-media {
+            font-size: 200%;
+            width: auto;
+            margin-left: auto;
+        }
+
+        .social-media a i{
+            color: white;
+            transition: 0.2s;
+        }
+
+        .social-media a i:hover {
+            color: lightblue;
+            transition: 0.2s;
+        }
+
+        .copyright {
+            color:white;
+        }
+
+
+
+    </style>
+
+     <!-- navbar Step 1-->
+     <nav>
+        <ul>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
+
+        </ul>
+    </nav>
+
+
+</head>
+<body>
+
+    <!-- Step 3-->
+    <section class="hero">
+        <div class="container">
+            <img src="images/rob.jpeg" />
+            <h1>Hi! I'm Rob! I teach people how to code and make websites.</h1>
+        </div>
+    </section>
+
+    <!-- Step 4 -->
+    <section id="aboutme" class="aboutme">
+        <h2>About me</h2>
+        <div class="aboutme-section">
+            <div class="img">
+                <div class="aboutme-image"></div>
+            </div>
+            <div class="aboutme-text">
+                Over a decade ago I was busy teaching maths to teenagers at three schools in London and Cambridge.
+                Since I’m a bit of a coding geek, I also built websites on the side for friends and family.
+                I soon learned that web development was a very lucrative career choice, so I gave up my successful(and sometimes stressful) job as a teacher to build websites. Today, I couldn’t be happier with that decision.
+
+                <p>After building websites for about seven years, I noticed a lot of people struggling to learn how to code. I wanted others to have the same freedoms that I enjoyed, so I started teaching web development</p>
+
+                <p>I'm familiar with HTML5, CSS3, JavaScript, PHP7 and MySQL. Checkout some of the projects I've done below.</p>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- Step 9 Project section -->
+    <section id="projects">
+        <div class="project">
+                <h2>Projects</h2>
+            <!--<div class="project-header">Projects</div> -->
+            <div class="projects">
+                
+                <div class="earth-project">
+                    <div class="text">
+                        <h3 class="project-name">Earth Facts</h3>
+                        <div class="content">
+                            <p>A HTML project about some facts about the earth.</p>
+                        </div>
+                        
+                        <a class="button" href="file:///Users/robpercival/Desktop/Complete%20Web%20Developer%20Course/1-html/htmlproject.html" target="_blank">
+                            View Project
+                        </a>
+                        
+                    </div>
+                </div>
+
+        <!-- Step 9 Part 1 -->
+                <div class="bbc-project">
+                    <div class="text">
+                        <h3 class="project-name">BBC Clone</h3>
+                        <div class="content">
+                            <p>This project is a clone of the BBC news website from the Web Dev 2.0 clone.</p>
+                        </div>
+                        <a class="button" href="https://www.completewebdevelopercourse.com/content/2-css/bbc.html" target="_blank">
+                            View Project
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            </div>
+        </div>
+    </section>
+    
+    <!--Step 10 Contact me section-->
+    <section id="contactme" class="contact">
+        <h2>Contact</h2>
+        <p>Use this form to get in touch. I would love to hear from you!</p>
+
+        <form class="contact-form">
+            
+            <div class="contact-details">
+                <label for="name">Name</label>
+                <input type="text" id="youname" placeholder="Yourname">
+
+                <label for="townborn">Subject</label>
+                <input type="text" id="subject" placeholder="Reason for your message">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Your email address">
+            </div>
+
+            <div class="message">
+                <label for="msg">Message</label>
+                <textarea id="msg" rows="15"></textarea>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                This site &copy; 2022 Robert Percival
+            </div>
+            <div class="social-media">
+                
+                <a href="https://www.facebook.com/rpcodestars"><i class="fa fa-facebook-official"></i></a>
+            
+            
+                <a href="https://twitter.com/techedrob"><i class="fa fa-twitter"></i></a>
+                
+            </div>
+        </div>
+    </footer>
+
+    
+   
+</body>
+</html>
